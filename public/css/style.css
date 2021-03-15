@@ -1,0 +1,23 @@
+.cardbody{
+	background-color: #ADD8E6;
+}
+
+.cardheader{
+	background-color: #1E90FF;
+	color: #FFFFFF;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: arial, helvetica, sans serif;
+	font-weight: bolder;
+	text-shadow: 2px 2px 2px #000080;
+}
+
+.card{
+	border: 1px solid #708090;
+	border-radius: 5px;
+}
+
+.navbarbody{
+	background-color: #1E90FF;
+	color: #FFFFFF;
+}
