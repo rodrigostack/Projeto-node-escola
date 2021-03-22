@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const connection = require('./database/database');
-const AlunosModel = require('./database/alunos');
+const Alunos = require('./database/alunos');
 
 //canexao com o banco
 connection

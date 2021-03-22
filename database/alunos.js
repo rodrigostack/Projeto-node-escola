@@ -2,6 +2,12 @@ const Sequelize = require('sequelize');
 const connection = require('./database');
 
 const Alunos = connection.define('alunos',{
+	id:{
+		type: Sequelize.INTEGER,
+		autoIncrement: true,
+		primaryKey:true
+	},
+	
 	nome:{
 		type: Sequelize.STRING,
 		allowNull: false
@@ -29,3 +35,5 @@ const Alunos = connection.define('alunos',{
 });
 
 Alunos.sync({force: false}).then(() => {});
+
+module.exports = Alunos;
