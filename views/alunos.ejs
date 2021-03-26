@@ -3,9 +3,49 @@
 <head>
 	<meta charset="utf-8">
 	<title>Nossos Alunos</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 <body>
-	<h1>Alunos ja cadastrados!</h1>
-
+	<div class="container">
+	
+			<div>
+				<h1>Alunos ja cadastrados!</h1>
+			</div>
+	
+			<div class="row">
+				<table class="table table-success table-striped table-hover">
+					  <thead>
+					    <tr>
+					      <th scope="col">Id</th>
+					      <th scope="col">Nome Aluno</th>
+					      <th scope="col">Data de Nascimento</th>
+					      <th scope="col">Curso</th>
+					      <th scope="col">Email</th>
+					      <th scope="col">Endereço</th>
+					      <th scope="col">Periodo</th>
+					    </tr>
+					  </thead>
+					 
+					  <tbody>
+					  <% for(var i=0; i < alunos.length; i++) { %>
+					    <tr>
+					      <td class="h6"><%= alunos[i].id %></td>
+					      <td class="h6"><%= alunos[i].nome %></td>
+					      <td class="h6"><%= alunos[i].datnasc %></td>
+					      <td class="h6"><%= alunos[i].curso %></td>
+					      <td class="h6"><%= alunos[i].email %></td>
+					      <td class="h6"><%= alunos[i].endereco %></td>
+					      <td class="h6"><%= alunos[i].periodo %></td>
+					    </tr>
+						<% } %>
+					  </tbody>
+				</table>
+				
+			</div>
+			
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </body>
 </html>
