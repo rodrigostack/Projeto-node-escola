@@ -9,34 +9,31 @@
 <body>
 	<div class="container">
 	
-			<div>
-				<h1>Alunos ja cadastrados!</h1>
-			</div>
-	
 			<div class="row">
 				<table class="table table-success table-striped table-hover">
 					  <thead>
+					  	<tr><td  colspan="7" ><h1>Alunos ja cadastrados!</h1></td></tr>
 					    <tr>
-					      <th scope="col">Id</th>
-					      <th scope="col">Nome Aluno</th>
-					      <th scope="col">Data de Nascimento</th>
-					      <th scope="col">Curso</th>
-					      <th scope="col">Email</th>
-					      <th scope="col">Endereço</th>
-					      <th scope="col">Periodo</th>
+					      <th class="trheader"scope="col">Id</th>
+					      <th class="trheader"scope="col">Nome Aluno</th>
+					      <th class="trheader"scope="col">Data de Nascimento</th>
+					      <th class="trheader"scope="col">Curso</th>
+					      <th class="trheader"scope="col">Email</th>
+					      <th class="trheader"scope="col">Endereço</th>
+					      <th class="trheader"scope="col">Periodo</th>
 					    </tr>
 					  </thead>
 					 
 					  <tbody>
 					  <% for(var i=0; i < alunos.length; i++) { %>
 					    <tr>
-					      <td class="h6"><%= alunos[i].id %></td>
-					      <td class="h6"><%= alunos[i].nome %></td>
-					      <td class="h6"><%= alunos[i].datnasc %></td>
-					      <td class="h6"><%= alunos[i].curso %></td>
-					      <td class="h6"><%= alunos[i].email %></td>
-					      <td class="h6"><%= alunos[i].endereco %></td>
-					      <td class="h6"><%= alunos[i].periodo %></td>
+					      <td class="trtable"><%= alunos[i].id %></td>
+					      <td class="trtable"><%= alunos[i].nome %></td>
+					      <td class="trtable"><%= alunos[i].datnasc %></td>
+					      <td class="trtable"><%= alunos[i].curso %></td>
+					      <td class="trtable"><%= alunos[i].email %></td>
+					      <td class="trtable"><%= alunos[i].endereco %></td>
+					      <td class="trtable"><%= alunos[i].periodo %></td>
 					    </tr>
 						<% } %>
 					  </tbody>
