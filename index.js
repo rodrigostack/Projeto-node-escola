@@ -35,8 +35,11 @@ cadastro(app);
 var alunos = require('./routes/alunos');
 alunos(app);
 
-var sucesso = require('./routes/sucesso')
+var sucesso = require('./routes/sucesso');
 sucesso(app);
+
+var consulta = require('./routes/consulta');
+consulta(app);
 
 
 app.listen(3000, function(){
