@@ -5,9 +5,14 @@ module.exports = function(app){
 		Alunos.findOne({
 			where: {id:id}
 		}).then(alunos => {
-			res.render('../views/consulta',{
+			if (alunos != undefined) {
+				res.render('../views/consulta',{
 				alunos: alunos
-			})
+			});
+			}else{
+				res.redirect('/alunos')
+			}
+			
 		})
 		
 	})
