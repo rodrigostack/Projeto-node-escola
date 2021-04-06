@@ -9,24 +9,26 @@
 <body>
 	<div class="container">
 		<div class="card">
-			<div class="card-header">
+			<div class="card-header cardheader">
 				<h2>Aluno Encontrado</h2>
 			</div>
 			<div class="card-body">
-				<h4>Nome Aluno:</h4>
-				<p><%= alunos.nome %></p>
-				<h4>Data de nascimento:</h4>
-				<p><%= alunos.datnasc %></p>
-				<h4>Curso escolhido:</h4>
-				<p><%= alunos.curso %></p>
-				<h4>Email aluno:</h4>
-				<p><%= alunos.email %></p>
-				<h4>Endereço aluno:</h4>
-				<p><%= alunos.endereco %></p>
-				<h4>Periodo curso:</h4>
-				<p><%= alunos.periodo %></p>
+				<h4 class="h3">Nome Aluno:</h4>
+				<p class="text-start"><%= alunos.nome %></p>
+				<h4 class="h3">Data de nascimento:</h4>
+				<p class="text-start"><%= alunos.datnasc %></p>
+				<h4 class="h3">Curso escolhido:</h4>
+				<p class="text-start"><%= alunos.curso %></p>
+				<h4 class="h3">Email aluno:</h4>
+				<p class="text-start"><%= alunos.email %></p>
+				<h4 class="h3">Endereço aluno:</h4>
+				<p class="text-start"><%= alunos.endereco %></p>
+				<h4 class="h3">Periodo curso:</h4>
+				<p class="text-start"><%= alunos.periodo %></p>
 			</div>
-			
+			<div class="card-footer">
+				<a href="/alunos"><button class="btn btn-outline-primary">Voltar aos alunos</button></a>
+			</div>
 		</div>
 		
 	</div>
